@@ -1,0 +1,110 @@
+#contact {
+    article:not(:last-child) {
+        border-bottom: calc(var(--padding-small) / 6) solid var(--secondary-color);
+        margin-bottom: var(--padding-medium);
+    }
+
+    article {
+        padding-bottom: var(--padding-medium);
+        > div{
+
+            h3 {
+                font-weight: 400;
+                margin-bottom: var(--padding-medium);
+            }
+
+            > div > *:not(:first-child) {
+                margin-bottom: var(--padding-xsmall);
+                margin-top: var(--padding-xsmall);
+            }
+
+            img {
+                width: 45%;
+                max-width: 150px;
+                margin: 0 auto;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 100;
+        }
+
+        fieldset {
+            border-radius: var(--padding-small);
+            padding: var(--padding-medium);
+            padding-top: var(--padding-large);
+            margin-top: var(--padding-medium);
+
+            div{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: var(--padding-small);
+                font-weight: 200;
+
+                input{
+                    border-radius: var(--padding-xsmall);
+                }
+            }
+
+            button {
+                font-size: var(--font-size-small);
+                font-weight: 200;
+                padding: var(--padding-small);
+                border-radius: var(--padding-small);
+
+                cursor: pointer;
+            }
+        }
+    }
+
+    > div > img {
+        display: none;
+    }
+}
+
+@media (min-width: 650px) {
+    #contact {
+        article > div {
+            display: flex;
+            align-items: start;
+            gap: var(--padding-medium);
+
+            h3 {
+                margin-bottom: var(--padding-large);
+            }
+
+            img {
+                margin: 0;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #contact {
+        > div{
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: var(--padding-medium);
+        }
+
+        > div > img {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    
+    #contact article {
+        padding: var(--padding-medium);
+        border: calc(var(--padding-small) / 6) solid var(--secondary-color);
+        border-radius: var(--padding-small);
+        margin-bottom: var(--padding-medium);
+    }
+}
+

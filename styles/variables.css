@@ -1,0 +1,53 @@
+@import url("https://use.typekit.net/pyz1wmt.css");
+
+:root{
+    --primary-color: #262858;
+    --primary-lighter-color: #506283;
+
+    /* ! also used for header texts */
+    --secondary-color: #d6c37f;
+
+    --accent-color: #582627;
+
+    --background-color: #fcf7ec;
+
+    --primary-text-color: #506283;
+    --secondary-text-color: white;
+
+
+    --header-font: "franklin-gothic-urw", sans-serif;
+    --primary-font: Helvetica, sans-serif;
+    --font-weight-light: 300;
+
+    --font-size-xsmall: 1rem;
+    --font-size-small: 1.5rem;
+    --font-size-xmedium: 2rem;
+    --font-size-medium: 2.5rem;
+    --font-size-large: 3rem;
+
+
+    --padding-xsmall: 0.25rem;
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem;
+    --padding-large: 2rem;
+
+
+    
+    --max-width: 1200px
+
+}
+
+/* 
+! Media queries used in system
+* Designed mobile first
+
+Small Tablet:
+min-width: 650px
+
+Big Tablet:
+min-width: 768px
+
+Desktop:
+min-width: 1025px
+
+*/
